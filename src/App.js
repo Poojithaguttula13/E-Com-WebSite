@@ -1,9 +1,11 @@
 import React from 'react'
+import './App.css'
+import LandingPages from './stores/pages/LandingPages'
 
 const App = () => {
   return (
     <div>
-      <h2>E-com website</h2>
+      <LandingPages />
     </div>
   )
 }
