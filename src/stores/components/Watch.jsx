@@ -1,24 +1,21 @@
 
 
 import React from 'react'
-import {computerData} from '../data/computers'
+import {watchData} from '../data/watch'
 import './Mobiles.css'
 
-const Computers = () => {
-
-    const firstImages = computerData.slice(0,5);
-
+const Watch = () => {
+    const firstImages = watchData.slice(0,5);
   return (
-
     <>
     <div className="proTitle">
-    <h2>Computers</h2>
+    <h2>Watch</h2>
     </div>
     <div className='proSection'>
       {
         firstImages.map((item) => {
             return(
-                <div className='ImageBox'>
+                <div className='imageBox'>
                     <img className='proImage' src={item.image} alt="" />
                 </div>
             )
@@ -29,4 +26,4 @@ const Computers = () => {
   )
 }
 
-export default Computers
+export default Watch
