@@ -7,7 +7,7 @@ import Navbar from '../stores/components/Navbar'
 const TvSingle = () => {
     const {id} = useParams()
     const product = tvData.find((item) =>item.id === id)
-    console.log(id);
+        console.log(product.image);
   return (
     <>
     <Navbar />

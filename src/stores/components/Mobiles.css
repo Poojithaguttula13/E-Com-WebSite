@@ -37,3 +37,16 @@
 .pageImg img {
     width: 100%;
 }
+.fullpage {
+    display: flex;
+}
+.pro-selected{
+    width: 30%;
+    border: 1px solid black;
+}
+.pro-input input {
+    margin: 5px;
+}
+.pro-input label {
+    display: flex;
+}
