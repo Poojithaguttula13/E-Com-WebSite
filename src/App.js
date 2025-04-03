@@ -26,6 +26,7 @@ import SpeakerSingle from './Singles/SpeakerSingle';
 import TvSingle from './Singles/TvSingle';
 import WatchSingle from './Singles/WatchSingle';
 import WomanSingle from './Singles/WomanSingle';
+import UserCart from './stores/UserCart';
 
 const App = () => {
   return (
@@ -56,6 +57,7 @@ const App = () => {
         <Route path='/tv/:id' element={<TvSingle />} />
         <Route path='/watch/:id' element={<WatchSingle />} />
         <Route path='/woman/:id' element={<WomanSingle />} />
+        <Route path='/cart' element={<UserCart />} />
 
       {/* <LandingPages /> */}
       </Routes> 

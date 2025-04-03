@@ -1,11 +1,13 @@
 import React from 'react'
 import { acData } from '../stores/data/ac'
 import { useParams } from 'react-router-dom'
-import './MobileSingle.css'
+import '../App.css'
 import Navbar from '../stores/components/Navbar'
+import { useCart } from '../stores/context/cartContext'
 
 const AcSingle = () => {
     const {id} = useParams()
+    const {addToCart, cartItems} = useCart()
     const product = acData.find((item) =>item.id === id)
     console.log(id);
   return (
@@ -30,7 +32,7 @@ const AcSingle = () => {
             {product.description}
         </p>
       </div>
-      <button>Add to Cart</button>
+      <button onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
     </div>
     </>

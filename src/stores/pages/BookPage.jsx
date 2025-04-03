@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react'
 import { booksData } from '../data/books'
-import '../components/Mobiles.css'
+import '../../App.css'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 

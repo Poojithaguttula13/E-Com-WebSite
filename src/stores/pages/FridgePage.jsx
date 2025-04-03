@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import { fridgeData } from '../data/fridge'
-import '../components/Mobiles.css'
+import '../../App.css'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 

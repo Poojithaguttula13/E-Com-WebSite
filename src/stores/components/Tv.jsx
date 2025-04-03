@@ -2,7 +2,7 @@
 
 import React from 'react'
 import {tvData} from '../data/tv'
-import './Mobiles.css'
+import '../../App.css'
 
 const Tv = () => {
     const firstImages = tvData.slice(0,5);

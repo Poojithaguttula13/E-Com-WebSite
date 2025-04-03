@@ -2,7 +2,7 @@
 
 import React from 'react'
 import {watchData} from '../data/watch'
-import './Mobiles.css'
+import '../../App.css'
 
 const Watch = () => {
     const firstImages = watchData.slice(0,5);

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import { tvData } from '../data/tv'
-import '../components/Mobiles.css'
+import '../../App.css'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 
@@ -43,7 +43,7 @@ const TvPage = () => {
     {filteredProduct.map((item)=>{
         return(
             <div>
-                <Link to={`/fridge/${item.id}`}>
+                <Link to={`/tv/${item.id}`}>
                 <div className="pageImg">
                     <img src={item.image} alt="" />
                 </div>

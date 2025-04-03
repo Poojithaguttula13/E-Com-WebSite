@@ -2,7 +2,7 @@
 
 import React from 'react'
 import {booksData} from '../data/books'
-import './Mobiles.css'
+import '../../App.css'
 
 const Books = () => {
     const firstImages = booksData.slice(0,5);

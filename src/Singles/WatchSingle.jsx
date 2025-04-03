@@ -1,11 +1,13 @@
 import React from 'react'
 import { watchData } from '../stores/data/watch'
 import { useParams } from 'react-router-dom'
-import './MobileSingle.css'
+import '../App.css'
 import Navbar from '../stores/components/Navbar'
+import { useCart } from '../stores/context/cartContext'
 
 const WatchSingle = () => {
     const {id} = useParams()
+    const {addToCart, cartItems} = useCart()
     const product = watchData.find((item) =>item.id === id)
     console.log(id);
   return (
@@ -30,7 +32,7 @@ const WatchSingle = () => {
             {product.description}
         </p>
       </div>
-      <button>Add to Cart</button>
+      <button onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
     </div>
     </>

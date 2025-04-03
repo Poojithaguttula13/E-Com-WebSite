@@ -1,11 +1,13 @@
 import React from 'react'
 import { booksData } from '../stores/data/books'
 import { useParams } from 'react-router-dom'
-import './MobileSingle.css'
+import '../App.css'
 import Navbar from '../stores/components/Navbar'
+import { useCart } from '../stores/context/cartContext'
 
 const BookSingle = () => {
     const {id} = useParams()
+    const {addToCart, cartItems} = useCart()
     const product = booksData.find((item) =>item.id === id)
     console.log(id);
   return (
@@ -30,7 +32,7 @@ const BookSingle = () => {
             {product.description}
         </p>
       </div>
-      <button>Add to Cart</button>
+      <button onClick= {() => addToCart(product)}>Add to Cart</button>
       </div>
     </div>
     </>

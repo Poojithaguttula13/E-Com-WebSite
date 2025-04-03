@@ -2,7 +2,7 @@
 
 import React from 'react'
 import {menData} from '../data/men'
-import './Mobiles.css'
+import '../../App.css'
 
 const Men = () => {
     const firstImages = menData.slice(0,5);

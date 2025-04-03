@@ -2,7 +2,7 @@
 
 import React from 'react'
 import {speakerData} from '../data/speaker'
-import './Mobiles.css'
+import '../../App.css'
 
 const Speakers = () => {
     const firstImages = speakerData.slice(0,5);

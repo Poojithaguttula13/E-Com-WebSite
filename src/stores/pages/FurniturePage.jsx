@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import { furnitureData } from '../data/furniture'
-import '../components/Mobiles.css'
+import '../../App.css'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 
@@ -43,7 +43,7 @@ const FurniturePage = () => {
     {filteredProduct.map((item)=>{
         return(
             <div>
-                <Link to={`/fridge/${item.id}`}>
+                <Link to={`/furniture/${item.id}`}>
                 <div className="pageImg">
                     <img src={item.image} alt="" />
                 </div>

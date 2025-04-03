@@ -2,7 +2,7 @@
 
 import React from 'react'
 import {fridgeData} from '../data/fridge'
-import './Mobiles.css'
+import '../../App.css'
 
 const Fridge = () => {
     const firstImages = fridgeData.slice(0,5);

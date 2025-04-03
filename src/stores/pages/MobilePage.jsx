@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { mobileData } from '../data/mobiles'
-import '../components/Mobiles.css'
+import '../../App.css'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 

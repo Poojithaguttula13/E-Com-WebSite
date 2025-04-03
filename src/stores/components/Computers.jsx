@@ -2,7 +2,7 @@
 
 import React from 'react'
 import {computerData} from '../data/computers'
-import './Mobiles.css'
+import '../../App.css'
 
 const Computers = () => {
 
