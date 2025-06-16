@@ -3,13 +3,14 @@
 import React from 'react'
 import {acData} from '../data/ac'
 import '../../App.css'
+import { Link } from 'react-router-dom';
 
 const Ac = () => {
     const firstImages = acData.slice(0,5);
   return (
     <>
     <div className="proTitle">
-    <h2>Air Conditioner</h2>
+    <Link to="/ac" className='proName'><h2>Air Conditioner</h2></Link>
     </div>
     <div className='proSection'>
       {

@@ -3,13 +3,16 @@
 import React from 'react'
 import {watchData} from '../data/watch'
 import '../../App.css'
+import { Link } from 'react-router-dom';
 
 const Watch = () => {
     const firstImages = watchData.slice(0,5);
   return (
     <>
     <div className="proTitle">
+      <Link to="/watch" className='proName'>
     <h2>Watch</h2>
+      </Link>
     </div>
     <div className='proSection'>
       {

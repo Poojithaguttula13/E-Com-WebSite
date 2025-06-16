@@ -285,3 +285,7 @@ ul li {
 .pro-input label {
   display: flex;
 }
+.proName {
+    text-decoration: none;
+    color: black;
+}

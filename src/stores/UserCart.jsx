@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 
 const UserCart = () => {
 
-    const {cartItems, addToCart, removeFromCart} = useCart()
+    const {cartItems, removeFromCart} = useCart()
 
   return (
  <>

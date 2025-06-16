@@ -3,10 +3,14 @@ import React from 'react'
 import '../../App.css'
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/cartContext'
+import Search from './Search'
+
 
 const Navbar = () => {
 
     const {cartItems} = useCart()
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true"
+
 
   return (
     <>
@@ -16,12 +20,18 @@ const Navbar = () => {
         <h2>E-Mart</h2>
         </Link>
     </div>
-    <div className="search">
-        <input type="text" placeholder='Search...' />
+    
+    <div>
+        <Search />
     </div>
+
     <div className="user">
         <div className="user-detail">
-            SignIn/SignUp
+        {!isLoggedIn && (
+              <Link to="/login">
+                SignIn/SignUp
+              </Link>
+            )}
         </div>
         <Link to='/cart' className="custom-link">
         <div className="cart">

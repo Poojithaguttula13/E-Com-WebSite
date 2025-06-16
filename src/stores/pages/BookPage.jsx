@@ -50,7 +50,7 @@ const BookPage = () => {
                     <img src={item.image} alt="" />
                 </div>
                 </Link>
-                <div className="proModel">
+                <div className="proModel" style={{marginTop:'35%'}}>
                     {item.title},{item.author}
                 </div>
             </div>

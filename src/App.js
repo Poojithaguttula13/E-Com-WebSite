@@ -27,11 +27,17 @@ import TvSingle from './Singles/TvSingle';
 import WatchSingle from './Singles/WatchSingle';
 import WomanSingle from './Singles/WomanSingle';
 import UserCart from './stores/UserCart';
+import Login from './Login/Login';
+import Signup from './Login/Signup';
+import Search from './stores/components/Search';
+// import ResultsPage from './stores/components/ResultsPage';
 
 const App = () => {
   return (
     <div>
       <Routes>
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
         <Route path='/' element={<LandingPages />}/>
         <Route path='/kitchen' element={<KitchenPage />}/>
         <Route path='/mobile' element={<MobilePage />}/>
@@ -58,6 +64,8 @@ const App = () => {
         <Route path='/watch/:id' element={<WatchSingle />} />
         <Route path='/woman/:id' element={<WomanSingle />} />
         <Route path='/cart' element={<UserCart />} />
+        <Route path='/search' element={<Search />} />
+        {/* <Route path='/results' element={<ResultsPage />} /> */}
 
       {/* <LandingPages /> */}
       </Routes> 

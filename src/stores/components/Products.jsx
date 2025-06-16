@@ -11,6 +11,7 @@ import Fridge from './Fridge'
 import Books from './Books'
 import Speakers from './Speakers'
 import Tv from './Tv'
+import Search from './Search'
 
 const Products = () => {
   return (
@@ -27,6 +28,7 @@ const Products = () => {
       <Books />
       <Speakers />
       <Tv />
+      {/* <Search /> */}
       
     </div>
   )

@@ -3,6 +3,7 @@
 import React from 'react'
 import {computerData} from '../data/computers'
 import '../../App.css'
+import { Link } from 'react-router-dom';
 
 const Computers = () => {
 
@@ -12,7 +13,9 @@ const Computers = () => {
 
     <>
     <div className="proTitle">
+      <Link to="/computer" className='proName'>
     <h2>Computers</h2>
+      </Link>
     </div>
     <div className='proSection'>
       {

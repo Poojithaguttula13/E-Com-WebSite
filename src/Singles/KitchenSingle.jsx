@@ -7,7 +7,7 @@ import { useCart } from '../stores/context/cartContext'
 
 const KitchenSingle = () => {
     const {id} = useParams()
-    const{addTocart, cartItems} = useCart()
+    const{addToCart, cartItems} = useCart()
     const product = kitchenData.find((item) =>item.id === id)
     console.log(id);
   return (
@@ -32,7 +32,7 @@ const KitchenSingle = () => {
             {product.description}
         </p>
       </div>
-      <button onClick={() => addTocart(product)}>Add to Cart</button>
+      <button onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
     </div>
     </>
