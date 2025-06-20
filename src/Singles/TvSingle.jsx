@@ -13,7 +13,7 @@ const TvSingle = () => {
   return (
     <>
     <Navbar />
-        <div className='ind-section'>
+    <div className='ind-section'>
       <div className="ind-img">
         <img src={product.image} alt="" />
       </div>
@@ -29,7 +29,7 @@ const TvSingle = () => {
       </div>
       <div className="ind-desc space" >
         <p>
-            {product.description}
+          {product.description}
         </p>
       </div>
       <button onClick={() => addToCart(product)}>Add to Cart</button>
